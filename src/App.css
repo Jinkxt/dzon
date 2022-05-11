@@ -1,4 +1,4 @@
-.App {
+.App{
   text-align: center;
 }
 
@@ -15,11 +15,6 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 10vh;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
 }
@@ -35,4 +30,9 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.btn-outline-success {
+  color:aqua;
+  border-color: aqua;
 }
