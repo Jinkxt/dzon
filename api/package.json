@@ -1,0 +1,37 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "ts-node-dev --inspect --respawn -- ./src/server.ts",
+    "build": "webpack --config webpack.config.js --mode=production",
+    "test:e2e": "jest e2e --runInBand --forceExit --detectOpenHandles",
+    "test:int": "jest int --runInBand --forceExit --detectOpenHandles",
+    "test:int:watch": "jest int --watch",
+    "test:unit": "jest unit --runInBand --forceExit --detectOpenHandles",
+    "test:unit:watch": "jest unit --watch --coverage"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "@types/jest": "^27.4.0",
+    "@types/node": "^17.0.8",
+    "@types/supertest": "^2.0.11",
+    "@types/typescript": "^2.0.0",
+    "copy-webpack-plugin": "^10.2.0",
+    "jest": "^27.4.7",
+    "jest-cli": "^27.4.7",
+    "nodemon": "^2.0.15",
+    "supertest": "^6.1.6",
+    "ts-node": "^10.4.0",
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.5.4",
+    "webpack": "^5.65.0",
+    "webpack-cli": "^4.9.1"
+  }
+}
