@@ -1,11 +1,13 @@
 //import logo from './logo.svg';
 import './App.css';
-import Base from './Basics/Base';
+import { Landing } from './Pages/Landing';
+
+
 
 function App() {
   return (
     <div className="App">
-      <Base/>
+      <Landing/>
     </div>
   );
 }
