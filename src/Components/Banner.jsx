@@ -47,12 +47,15 @@ const Slide = styled.div`
 `;
 
 const ImgContainer = styled.div`
-  height: 100%;
   flex: 1;
+  width: 50%;
+  height:100%;
+  align-item:center;
 `;
 
 const Image = styled.img`
   height: 80%;
+  object-fit: cover;
 `;
 
 const InfoContainer = styled.div`

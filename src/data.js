@@ -1,7 +1,7 @@
 export const sliderItems = [
     {
       id: 1,
-      img: "https://superetti.dz/wp-content/uploads/2021/03/4264.jpg",
+      img: "https://www.hamoud-boualem.com/media/k2/items/cache/077ab55046ce80eaf9a3ddea999597ca_XL.png",
       title: "Hamoud Boualem",
       desc: "DON'T COMPROMISE, GET THE ABSOLUTE BEST.",
       bg: "f5fafd",
