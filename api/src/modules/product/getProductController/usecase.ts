@@ -3,14 +3,13 @@ import { UseCaseError } from '../../../shared/core/errors-models';
 import { Result, Fail } from '../../../shared/core/result';
 import { ImpProductRepo } from '../repo/implementation/impRepo';
 import { Product } from '../domain';
-import { ProductsDTO } from '../mapper/product-mapper';
 
 interface DTO {
   query: string;
 }
 
 export class GetProductsUseCase
-  implements UseCase<DTO, Result<ProductsDTO[], UseCaseError>>
+  implements UseCase<DTO, Result<Product[], UseCaseError>>
 {
   constructor(private repo: ImpProductRepo) {}
   public async execute() {
