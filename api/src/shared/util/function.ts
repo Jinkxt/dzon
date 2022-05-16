@@ -12,4 +12,17 @@ function getDateAndTime(): IDateEndTime {
   return time;
 }
 
-export { getDateAndTime };
+// async function  delay(delay:number,value:any){
+//     const delayPromise = (delay:any) => new Promise(res => setTimeout(res, delay))
+//     await delayPromise(delay)
+//   return value
+//   }
+
+const delay = async (delay = 1000, callback: any) => {
+  const delayPromise = (ms: any) => new Promise((res) => setTimeout(res, ms));
+  await delayPromise(delay);
+
+  return callback;
+};
+
+export { getDateAndTime, delay };
