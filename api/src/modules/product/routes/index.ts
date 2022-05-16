@@ -1,4 +1,5 @@
 import { Router } from 'express';
+import { getPopulerProductsController } from '../getPopulerProductController';
 import { getProductsController } from '../getProductController';
 
 export class ProductRouter {
@@ -11,6 +12,10 @@ export class ProductRouter {
   private initializeRouter(): void {
     this.router.get('/api/prodcuts', (req, res) =>
       getProductsController.execute(req, res)
+    );
+
+    this.router.get('/api/prodcuts/populer', (req, res) =>
+      getPopulerProductsController.execute(req, res)
     );
   }
 }

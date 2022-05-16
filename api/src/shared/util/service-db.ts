@@ -1,11 +1,13 @@
-import { popularProducts } from './consts';
 import { delay } from './function';
 
 class ServiceDb {
-  public get<T>(endpoint: string, i = 0, reqHeader = {}): Promise<T> {
-    return new Promise((resolve, reject) =>
-      resolve(delay(2000, popularProducts))
-    );
+  public get<T>(
+    endpoint: string,
+    dummy: any = '',
+    i = 0,
+    reqHeader = {}
+  ): Promise<T> {
+    return new Promise((resolve, reject) => resolve(delay(2000, dummy)));
   }
   public post<T>(endpoint: string, data: string, i = 0) {
     return Promise.reject({});
