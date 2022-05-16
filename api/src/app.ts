@@ -1,6 +1,6 @@
 import express, { Application, Request, Response, NextFunction } from 'express';
-import { apiRouter } from './modules/routes/index';
 import { join } from 'path';
+import { ProductRouter } from './modules/product/routes';
 import { DebugRoute } from './shared/debug';
 
 class App {
@@ -11,7 +11,7 @@ class App {
     this.app = express();
     this.config();
     this.debugRoute.routes(this.app);
-    this.app.use(new apiRouter().router);
+    this.app.use(new ProductRouter().router);
     this.app.use(express.static(__dirname + '/build'));
     this.app.get('/*', (_, res) => {
       res.sendFile(join(__dirname + '/build/index.html'));
